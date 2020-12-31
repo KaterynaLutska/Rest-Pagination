@@ -1,0 +1,1 @@
+html{scroll-behavior:smooth}body{background-color:grey;color:wheat}.search-form{display:flex;justify-content:center;padding:8px;margin-bottom:24px}.button{display:block;margin-left:auto;margin-right:auto}.button.is-hidden,.button>.spinner.ishidden,.is-hidden,button.is-hidden{display:none}
