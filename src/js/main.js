@@ -9,6 +9,7 @@ const loadMoreBtn = new LoadMoreBtn({
 });
 
 refs.searchForm.addEventListener("submit", searchFormSubmitHander);
+
 loadMoreBtn.refs.button.addEventListener("click", fetchArticles);
 
 function searchFormSubmitHander(event) {
@@ -18,9 +19,10 @@ function searchFormSubmitHander(event) {
   newsService.query = form.elements.query.value;
 
   clearArticleContainer();
+  form.reset(); // очищає значення імпута
+
   newsService.resetPage();
   fetchArticles();
-  form.reset(); // очищає значення імпута
 }
 
 function fetchArticles() {

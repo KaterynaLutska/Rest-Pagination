@@ -6,7 +6,7 @@ export default {
   searchQuery: "",
   page: 1,
   fetchArticles() {
-    const url = `https://newsapi.org/v2/everything?q=${this.searchQuery}&apiKey=${apiKey}&language=ru&page=${this.page}`;
+    const url = `https://newsapi.org/v2/everything?q=${this.searchQuery}&apiKey=${apiKey}&language=ru&pageSize=3&page=${this.page}`;
     const options = {
       methode: "GET", // по замовчуванням
       headers: {
